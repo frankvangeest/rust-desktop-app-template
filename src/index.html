@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" href="/lib/metro.css">
+
+    <link rel="stylesheet" href="/lib/icons.css">
+
+    <!-- <link rel="stylesheet" href="styles.css" /> -->
+
+    <link rel="stylesheet" href="/dark-theme.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Grapical Desktop App</title>
+
+    <script type="module" src="/main.js" defer></script>
+    
+    <style>
+      .logo.vanilla:hover {
+        filter: drop-shadow(0 0 2em #ffe21c);
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav data-role="ribbonmenu">
+      <ul class="tabs-holder">
+          <li class="static"><a href="#">Static</a></li>
+          <li><a href="#section-one">One</a></li>
+          <li><a href="#section-two">Two</a></li>
+          <li><a href="#section-three">Three</a></li>
+          <li><a href="#section-1-1">Main</a></li>
+      </ul>
+  
+      <div class="content-holder">
+          <div class="section" id="section-one">
+              <p class="p-4">Section one</p>
+          </div>
+          <div class="section" id="section-two">
+              <p class="p-4">Section two</p>
+          </div>
+          <div class="section" id="section-three">
+              <p class="p-4">Section three</p>
+          </div>
+          <div class="section" id="section-1-1">
+            <div class="group">
+                <button class="ribbon-button">
+                        <span class="icon">
+                            <img src="/assets/tauri.svg" alt="tauri icon">
+                        </span>
+                    <span class="caption">Share</span>
+                </button>
+
+                <span class="title">Group title</span>
+            </div>
+
+            <div class="group">
+                <button class="ribbon-button">
+                        <span class="icon">
+                            <img src="/assets/tauri.svg" alt="tauri icon">
+                        </span>
+                    <span class="caption">Share</span>
+                </button>
+
+                <span class="title">Group title</span>
+            </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <h1>Welcome to Graphical Desktop App Template! Jordy :)</h1>
+
+      <div class="row">
+        <a href="https://tauri.app" target="_blank" rel="noreferrer noopener">
+          <img src="/assets/tauri.svg" class="logo tauri" alt="Tauri logo" />
+        </a>
+      </div>
+
+      <p>Click on the Tauri logo to learn more about the framework</p>
+
+      <form class="row" id="greet-form">
+        <input id="greet-input" placeholder="Enter a name..." />
+        <button type="submit">Greet</button>
+      </form>
+
+      <p id="greet-msg"></p>
+    </div>
+    <script src="/lib/metro.js"></script>
+  </body>
+</html>
